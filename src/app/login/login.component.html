@@ -1,0 +1,24 @@
+<div class="main">
+    <img src="assets/logo.png" style="margin-left:31%">
+<div class="login-page">
+    <div class="form">
+   <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <div class="input-group">
+        <label>Name 
+          <input type="text" formControlName="name"></label>
+          <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ titleAlert }}</div>                  
+      </div>
+      <div class="input-group">
+        <label> Password 
+          <input type="password" formControlName="password"></label>
+          <div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">You must specify a description that's between 30 and 500 characters.</div>                  
+      </div>        
+        <div class="navbar-brand"><button type="submit" class="btn btn-warning" [disabled]="!rForm.valid">Submit</button></div>
+        <a class="navbar-brand" routerLink="register"><button type="button" class="btn btn-warning">Register</button></a>       
+  </form> 
+    </div>
+</div>
+</div>
+
+
+
