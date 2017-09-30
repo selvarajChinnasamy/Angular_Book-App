@@ -1,8 +1,8 @@
 Stpes to run this code in your system
    
            1.download this code 
-           2.cmd move to root folder 
-           3.Install all dependency using cmd npm install
+           2.in cmd  move to project folder 
+           3.Install all dependency using cmd- npm install
            4.complie the code using npm run start
            5.the project will run on the port http://localhost:4000
             
